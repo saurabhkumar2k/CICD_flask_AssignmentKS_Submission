@@ -14,3 +14,9 @@ Created new cluster in MongoDB Atlas and set the ConnectionString in .env file. 
 ImageName: **StudentRegistration**
 <img width="1757" height="962" alt="image" src="https://github.com/user-attachments/assets/8c1d3515-ba4a-4369-9183-312f455d36b9" />
 
+**AT THIS STAGE I HAVE ACHIEVED AS BELOW:**
+a. **Flask application is in running state.**
+b. **MongoDB Atlas connected sucessfully.**
+c. **.env configured correctly.**
+d. **Atlas authentication is working**
+
