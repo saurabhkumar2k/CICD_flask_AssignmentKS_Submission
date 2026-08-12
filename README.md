@@ -6,6 +6,6 @@ ImageName: **CloneRepo**
 
 **Step 2**
 We need to install the packages for dependencies of the project through command pip install -r requirements.txt
-ImageName: **pipcpmmand**
+ImageName: **pipcommand**
 <img width="1856" height="791" alt="image" src="https://github.com/user-attachments/assets/87a48613-e448-46a9-a4ce-679400f0664a" />
 
