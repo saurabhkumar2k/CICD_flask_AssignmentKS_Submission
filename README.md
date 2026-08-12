@@ -20,3 +20,19 @@ b. **MongoDB Atlas connected sucessfully.**
 c. **.env configured correctly.**
 d. **Atlas authentication is working**
 
+**Step 4**
+As guided in documet, at least one health/status endpoint (e.g. /health) that the deployment step can use to confi rm the container actually started correctly on EC2. So app.py has been modified with code:
+@app.route('/health')
+def health():
+    try:
+        mongo.cx.admin.command('ping')
+        return {
+            "status": "UP",
+            "database": "Connected"
+        }, 200
+    except Exception as e:
+        return {
+            "status": "DOWN",
+            "error": str(e)
+        }, 500
+And tested the application and founf its running.
