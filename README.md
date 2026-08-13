@@ -39,9 +39,9 @@ And tested the application and found its running.
 
 **Step 5**
 Install pytest explicitely as it was not installed
-ImageName
+ImageName: **pytest**
 <img width="1457" height="271" alt="image" src="https://github.com/user-attachments/assets/3726c75a-8d41-4de9-8aba-be83e15ff29c" />
-
+ImageName: **Cnfpytest**
 <img width="1412" height="257" alt="image" src="https://github.com/user-attachments/assets/e2f95632-20b1-465b-a13c-efe572e0f319" />
 
 
