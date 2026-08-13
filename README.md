@@ -73,9 +73,16 @@ Started Docker Desktop
 ImageName: **DockerDesktop**
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/678e9c50-1968-4d5b-bdde-059358f31a17" />
 
-
-
+**Step 9**
+Build docker image
+ImageName: **DockerImageCreated**
 <img width="1502" height="540" alt="image" src="https://github.com/user-attachments/assets/574b697f-9ec7-4967-ae07-74c317f8e595" />
+
+Verify docker image 
+Image named **flask-student-app** is listed.
+ImageName: **DockerImageVerified**
+<img width="1640" height="496" alt="image" src="https://github.com/user-attachments/assets/bf1cb789-5bd7-4a13-9b5c-bab055652ad3" />
+
 
 
 
