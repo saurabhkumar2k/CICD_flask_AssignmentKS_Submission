@@ -35,4 +35,8 @@ def health():
             "status": "DOWN",
             "error": str(e)
         }, 500
-And tested the application and founf its running.
+And tested the application and found its running.
+
+**Step 5**
+Install pytest explicitely as it was not installed
+<img width="1457" height="271" alt="image" src="https://github.com/user-attachments/assets/3726c75a-8d41-4de9-8aba-be83e15ff29c" />
