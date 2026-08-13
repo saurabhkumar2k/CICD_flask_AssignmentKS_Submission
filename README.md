@@ -47,4 +47,35 @@ Run command python -m pytest -v and got the output
 ImageName: **CheckPytest**
 <img width="1523" height="440" alt="image" src="https://github.com/user-attachments/assets/c929c7cf-0e2e-4748-af99-f4f9ca9ca9f5" />
 
+**Step 6**
+Created a file named **Dockerfile** in the project root:
+Code for the file
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+EXPOSE 5000
+CMD ["python", "app.py"]
+
+**Step 7**
+Created .dockerignore
+.git
+.github
+__pycache__
+*.pyc
+.env
+.pytest_cache
+.vscode
+
+**Step 8**
+Started Docker Desktop
+ImageName: **DockerDesktop**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/678e9c50-1968-4d5b-bdde-059358f31a17" />
+
+
+
+<img width="1502" height="540" alt="image" src="https://github.com/user-attachments/assets/574b697f-9ec7-4967-ae07-74c317f8e595" />
+
+
 
