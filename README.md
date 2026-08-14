@@ -107,6 +107,18 @@ Now open application at http://localhost:5000
 ImageName: **RunningApp**
 <img width="1577" height="926" alt="image" src="https://github.com/user-attachments/assets/c8cf5e57-6e4b-4d18-8db1-a0f585ff4e25" />
 
+It is confirmed that Dockerized Flask application is working successfully. 
+So I have completed so far:
+-Cloned repository
+-Configured MongoDB Atlas
+-Fixed .env configuration
+-Application running locally
+-Pytest executed successfully (4/4 passed)
+-Docker image built
+-Docker container running
+-Application accessible at http://localhost:5000
+-Code pushed to your GitHub repository
+
 
 
 
