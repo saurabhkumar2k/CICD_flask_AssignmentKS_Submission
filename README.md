@@ -89,6 +89,19 @@ Image named **flask-student-app** is listed.
 ImageName: **DockerImageVerified**
 <img width="1640" height="496" alt="image" src="https://github.com/user-attachments/assets/acc15465-23c4-4e33-a53b-bec554b83904" />
 
+**Step 10**
+Now run docker with container name flaskapp through command as below:
+docker run -d -p 5000:5000 `
+-e MONGO_URI="mongodb+srv://saurabhkumar2k_db_user:MPtTUMa09nop0Qbn@m0.lsqcivs.mongodb.net" `
+-e SECRET_KEY="mysecretkey" `
+--name flaskapp `
+flask-student-app
+
+After starting the container checking status with command as below:
+docker ps
+ImageName: **DockerRun**
+<img width="1532" height="320" alt="image" src="https://github.com/user-attachments/assets/111c1dd1-0a2e-4226-b512-b8689f5d9465" />
+
 
 
 
