@@ -4,11 +4,11 @@ As per guideline for CI CD Pipeline, steps are followed as given below:
 ImageName: **CloneRepo**
 <img width="1290" height="400" alt="image" src="https://github.com/user-attachments/assets/db00c717-bbff-4064-a603-59a5a3970d40" />
 
-
 **Step 2**
 We need to install the packages for dependencies of the project through command pip install -r requirements.txt
 ImageName: **pipcommand**
-<img width="1856" height="791" alt="image" src="https://github.com/user-attachments/assets/87a48613-e448-46a9-a4ce-679400f0664a" />
+<img width="1856" height="791" alt="image" src="https://github.com/user-attachments/assets/20b5da9f-51c9-4485-8358-34502c871819" />
+
 
 **Step 3**
 Created new cluster in MongoDB Atlas and set the ConnectionString in .env file. Test the application with command "python app.py". And found it's working.
