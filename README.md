@@ -102,6 +102,11 @@ docker ps
 ImageName: **DockerRun**
 <img width="1532" height="320" alt="image" src="https://github.com/user-attachments/assets/111c1dd1-0a2e-4226-b512-b8689f5d9465" />
 
+**Step 11**
+Now open application at http://localhost:5000
+ImageName: **RunningApp**
+<img width="1577" height="926" alt="image" src="https://github.com/user-attachments/assets/c8cf5e57-6e4b-4d18-8db1-a0f585ff4e25" />
+
 
 
 
