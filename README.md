@@ -13,7 +13,8 @@ ImageName: **pipcommand**
 **Step 3**
 Created new cluster in MongoDB Atlas and set the ConnectionString in .env file. Test the application with command "python app.py". And found it's working.
 ImageName: **StudentRegistration**
-<img width="1757" height="962" alt="image" src="https://github.com/user-attachments/assets/8c1d3515-ba4a-4369-9183-312f455d36b9" />
+<img width="1757" height="962" alt="image" src="https://github.com/user-attachments/assets/66247b72-7886-4dd9-8b35-b7eaec3d3f57" />
+
 
 **AT THIS STAGE I HAVE ACHIEVED AS BELOW:**
 a. **Flask application is in running state.**
