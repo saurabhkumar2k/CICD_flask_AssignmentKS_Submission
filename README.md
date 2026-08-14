@@ -76,17 +76,19 @@ __pycache__
 **Step 8**
 Started Docker Desktop
 ImageName: **DockerDesktop**
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/678e9c50-1968-4d5b-bdde-059358f31a17" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5deeb009-edc3-4fbe-a976-a793833e7bf5" />
 
 **Step 9**
 Build docker image
 ImageName: **DockerImageCreated**
-<img width="1502" height="540" alt="image" src="https://github.com/user-attachments/assets/574b697f-9ec7-4967-ae07-74c317f8e595" />
+<img width="1502" height="540" alt="image" src="https://github.com/user-attachments/assets/0ce5302c-198e-49f8-95d4-244975a14cdf" />
+
 
 Verify docker image 
 Image named **flask-student-app** is listed.
 ImageName: **DockerImageVerified**
-<img width="1640" height="496" alt="image" src="https://github.com/user-attachments/assets/bf1cb789-5bd7-4a13-9b5c-bab055652ad3" />
+<img width="1640" height="496" alt="image" src="https://github.com/user-attachments/assets/acc15465-23c4-4e33-a53b-bec554b83904" />
+
 
 
 
