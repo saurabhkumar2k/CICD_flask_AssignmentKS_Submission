@@ -127,6 +127,12 @@ flask-student-app is listed.
 ImageName: **flaskstudentApp**
 <img width="1466" height="457" alt="image" src="https://github.com/user-attachments/assets/7e7de5c0-d359-49a9-b731-d7ec36a6cd2f" />
 
+Verifying running container with command docker ps
+ImageName: **ContainerRunning**
+<img width="1341" height="252" alt="image" src="https://github.com/user-attachments/assets/4b2dfcd1-ade4-4860-a609-29290923855a" />
+
+
+
 
 
 
