@@ -119,6 +119,15 @@ So I have completed so far:
 -Application accessible at http://localhost:5000
 -Code pushed to your GitHub repository
 
+**Step 12**
+Next step is for CI/CD assignments. 
+
+First verifying the docer image
+flask-student-app is listed.
+ImageName: **flaskstudentApp**
+<img width="1466" height="457" alt="image" src="https://github.com/user-attachments/assets/7e7de5c0-d359-49a9-b731-d7ec36a6cd2f" />
+
+
 
 
 
