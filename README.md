@@ -45,10 +45,12 @@ ImageName: **pytest**
 <img width="1457" height="271" alt="image" src="https://github.com/user-attachments/assets/04b311c7-4ee5-46ed-98e1-c6ee3af9b5c0" />
 
 ImageName: **Cnfpytest**
-<img width="1412" height="257" alt="image" src="https://github.com/user-attachments/assets/e2f95632-20b1-465b-a13c-efe572e0f319" />
+<img width="1412" height="257" alt="image" src="https://github.com/user-attachments/assets/0e64a2e2-d100-4300-82be-c3d8c528345f" />
+
 Run command python -m pytest -v and got the output 
 ImageName: **CheckPytest**
-<img width="1523" height="440" alt="image" src="https://github.com/user-attachments/assets/c929c7cf-0e2e-4748-af99-f4f9ca9ca9f5" />
+<img width="1523" height="440" alt="image" src="https://github.com/user-attachments/assets/603ea6a8-3bb1-4c35-b65e-0d6fe1874917" />
+
 
 **Step 6**
 Created a file named **Dockerfile** in the project root:
