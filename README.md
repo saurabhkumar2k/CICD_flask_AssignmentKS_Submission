@@ -214,17 +214,102 @@ ImageName: **RunningHostedApplication**
 <img width="1897" height="925" alt="image" src="https://github.com/user-attachments/assets/34549b15-4632-4ddf-a1e5-6bba1505e464" />
 
 
-**Step 99**
-Next step is for CI/CD assignments. 
+**Step 26**
+Next step is for Email Configuration. 
+Updated CI-CD.Yaml with code below:
+name: Build Docker Image
 
-First verifying the docer image
-flask-student-app is listed.
-ImageName: **flaskstudentApp**
-<img width="1466" height="457" alt="image" src="https://github.com/user-attachments/assets/7e7de5c0-d359-49a9-b731-d7ec36a6cd2f" />
+on:
+  push:
+    branches:
+      - main
 
-Verifying running container with command docker ps
-ImageName: **ContainerRunning**
-<img width="1341" height="252" alt="image" src="https://github.com/user-attachments/assets/4b2dfcd1-ade4-4860-a609-29290923855a" />
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker Image
+        run: docker build -t student-registration-app -f flask_Practice/Dockerfile flask_Practice
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Tag Docker Image
+        run: |
+          docker tag student-registration-app:latest 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:${{ github.sha }}
+      - name: Push Docker Image
+        run: |
+          docker push 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:${{ github.sha }}
+          
+      - name: Send Success Email
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "SUCCESS - Student Registration Deployment"
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: GitHub Actions
+          body: |
+            Deployment Successful
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit SHA: ${{ github.sha }}
+            ECR Repository: student-registration-app
+            EC2 Target: EC2 Deployment Successful
+            Run URL:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      - name: Send Failure Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "FAILED - Student Registration Deployment"
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: GitHub Actions
+          body: |
+            Deployment Failed
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit SHA: ${{ github.sha }}
+            Please review the workflow logs.
+            Run URL:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+    Push code to the repository. And change SMTP Pasword and UserName
+    
+    ImageName: **SMTP**
+    <img width="1657" height="811" alt="image" src="https://github.com/user-attachments/assets/7536f151-f2d2-4b23-b20a-fd1d7df4dc96" />
+
+    And Finally got successfully deployment email
+    ImageName: **EmailDeployment**
+    <img width="1847" height="945" alt="image" src="https://github.com/user-attachments/assets/7011f531-ebaa-4a54-8932-d6f50a317dc5" />
+
+    
+
+
 
 
 
