@@ -169,19 +169,23 @@ ImageName: **ECRRepoList**
 **Step 18**
 
 Worked on GitHub Actions for Build DOcker Image for ECR
-ImageFile: BuildDockerImage
+ImageName: BuildDockerImage
 <img width="1913" height="962" alt="image" src="https://github.com/user-attachments/assets/66b9e575-7723-48b9-8f4d-e13b12a2a35f" />
 
 **Step 19**
 Connected EC2 Instance and confirm repository
-ImageFile: CnfRepoEc
+ImageName: CnfRepoEc
 <img width="1898" height="801" alt="image" src="https://github.com/user-attachments/assets/f378a89e-9ebd-47d8-9801-486eb330727e" />
 
 **Step 20**
 Updated CICD.yaml file with corrected code and updated Github Secrates with correct AWS access key information (Id, Key), Finally got running workflow like below:
-ImageFile: **WOrkFlowFinal**
+ImageName: **WOrkFlowFinal**
 <img width="1877" height="948" alt="image" src="https://github.com/user-attachments/assets/126f3a78-18a1-4677-97b1-7776a856be36" />
 
+Step 21
+Go to ECR Repository checked here for an image **latest**
+ImageName: ImageECR
+<img width="1886" height="796" alt="image" src="https://github.com/user-attachments/assets/15a5ebe4-592e-4eb8-8912-e2240345d0be" />
 
 **Step 99**
 Next step is for CI/CD assignments. 
