@@ -205,6 +205,10 @@ Now confirm whether the GitHub Action successfully pushed the Docker image to EC
 ImageName: **PushedDockerImage**
 <img width="1893" height="853" alt="image" src="https://github.com/user-attachments/assets/d3a77006-1f2b-4cc7-b43d-968be18b45ad" />
 
+**Step 25**
+ImageName: RunningHostedApplication
+<img width="1897" height="925" alt="image" src="https://github.com/user-attachments/assets/34549b15-4632-4ddf-a1e5-6bba1505e464" />
+
 
 **Step 99**
 Next step is for CI/CD assignments. 
