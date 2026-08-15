@@ -206,7 +206,11 @@ ImageName: **PushedDockerImage**
 <img width="1893" height="853" alt="image" src="https://github.com/user-attachments/assets/d3a77006-1f2b-4cc7-b43d-968be18b45ad" />
 
 **Step 25**
-ImageName: RunningHostedApplication
+
+ImageName: **RunningFromEC2**
+<img width="1917" height="898" alt="image" src="https://github.com/user-attachments/assets/dc4f0410-69ba-4b6f-b95e-0e4847d492c2" />
+
+ImageName: **RunningHostedApplication**
 <img width="1897" height="925" alt="image" src="https://github.com/user-attachments/assets/34549b15-4632-4ddf-a1e5-6bba1505e464" />
 
 
