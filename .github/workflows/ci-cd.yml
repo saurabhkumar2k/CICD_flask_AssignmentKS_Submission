@@ -17,5 +17,4 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker Image
-        run: |
-          docker build -t student-registration-app .
+        run: docker build -t student-registration-app -f flask_Practice/Dockerfile flask_Practice
