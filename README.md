@@ -120,6 +120,13 @@ So I have completed so far:
 -Code pushed to your GitHub repository
 
 **Step 12**
+**Need to go for AWS Setup**
+Creating ECR repository
+ImageName: **ECRRepo**
+<img width="1887" height="940" alt="image" src="https://github.com/user-attachments/assets/ebce9961-308b-4e53-b98e-d7d2e3a26564" />
+
+
+**Step 99**
 Next step is for CI/CD assignments. 
 
 First verifying the docer image
