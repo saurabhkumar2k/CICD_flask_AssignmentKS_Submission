@@ -127,8 +127,15 @@ ImageName: **ECRRepo**
 
 **Step 13**
 Created EC2 instance
-ImageName: EC2Instance
+ImageName: **EC2Instance**
 <img width="1870" height="882" alt="image" src="https://github.com/user-attachments/assets/81a0fc5b-33b3-4667-a21d-b5bfdbadfbaf" />
+
+**Step 14**
+Now installing Docker with commands
+sudo apt update
+ImageName: **DockerInstall**
+<img width="1896" height="817" alt="image" src="https://github.com/user-attachments/assets/42152f89-be3e-4c76-8a72-7048e2de47ae" />
+
 
 
 **Step 99**
