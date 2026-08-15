@@ -36,4 +36,53 @@ jobs:
 
       - name: Push Docker Image
         run: |
-          docker push 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:latest
+          docker push 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:
+          
+      - name: Send Success Email
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "SUCCESS - Student Registration Deployment"
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: GitHub Actions
+          body: |
+            Deployment Successful
+
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit SHA: ${{ github.sha }}
+
+            ECR Repository: student-registration-app
+            EC2 Target: EC2 Deployment Successful
+
+            Run URL:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Send Failure Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "FAILED - Student Registration Deployment"
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: GitHub Actions
+          body: |
+            Deployment Failed
+
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit SHA: ${{ github.sha }}
+
+            Please review the workflow logs.
+
+            Run URL:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
