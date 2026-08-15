@@ -192,9 +192,18 @@ Image is existing now at ECR Repository. So login to EC2 and tried to pull image
 ImageName: PullImage
 <img width="1910" height="865" alt="image" src="https://github.com/user-attachments/assets/7e2fecf9-7caf-404a-adbf-8a2210b1ef19" />
 
-ImageName:PulledFinalImage
+ImageName:**PulledFinalImage**
 <img width="1897" height="905" alt="image" src="https://github.com/user-attachments/assets/948ab90e-099b-4d06-8338-48d1aa59bde1" />
 
+**Step 23**
+Now run container
+ImageName: **RunContainer**
+<img width="1912" height="605" alt="image" src="https://github.com/user-attachments/assets/7bd5aaa5-21c5-4e7c-85a1-b162f67e3746" />
+
+**Step 24**
+Now confirm whether the GitHub Action successfully pushed the Docker image to ECR.
+ImageName: **PushedDockerImage**
+<img width="1893" height="853" alt="image" src="https://github.com/user-attachments/assets/d3a77006-1f2b-4cc7-b43d-968be18b45ad" />
 
 
 **Step 99**
