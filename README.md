@@ -125,6 +125,11 @@ Creating ECR repository
 ImageName: **ECRRepo**
 <img width="1887" height="940" alt="image" src="https://github.com/user-attachments/assets/ebce9961-308b-4e53-b98e-d7d2e3a26564" />
 
+**Step 13**
+Created EC2 instance
+ImageName: EC2Instance
+<img width="1870" height="882" alt="image" src="https://github.com/user-attachments/assets/81a0fc5b-33b3-4667-a21d-b5bfdbadfbaf" />
+
 
 **Step 99**
 Next step is for CI/CD assignments. 
