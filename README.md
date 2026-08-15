@@ -216,33 +216,6 @@ ImageName: **RunningHostedApplication**
 Next step is for Email Configuration. 
 Updated CI-CD.Yaml with code below:
 name: Build Docker Image
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Build Docker Image
-        run: docker build -t student-registration-app -f flask_Practice/Dockerfile flask_Practice
-
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
@@ -296,13 +269,16 @@ jobs:
             Run URL:
             https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-    Push code to the repository. And change SMTP Pasword and UserName    
+    Updated repository. And change SMTP Pasword and UserName  
+    
     ImageName: **SMTP**
+    
     <img width="1657" height="811" alt="image" src="https://github.com/user-attachments/assets/7536f151-f2d2-4b23-b20a-fd1d7df4dc96" />
 
     And Finally got successfully deployment email
     
     ImageName: **EmailDeployment**
+    
     <img width="1847" height="945" alt="image" src="https://github.com/user-attachments/assets/7011f531-ebaa-4a54-8932-d6f50a317dc5" />
 
     
