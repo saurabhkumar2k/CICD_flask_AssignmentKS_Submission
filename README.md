@@ -135,6 +135,9 @@ Now installing Docker with commands
 sudo apt update
 ImageName: **DockerInstall**
 <img width="1896" height="817" alt="image" src="https://github.com/user-attachments/assets/42152f89-be3e-4c76-8a72-7048e2de47ae" />
+ImageName: **DockerVerify**
+<img width="1738" height="438" alt="image" src="https://github.com/user-attachments/assets/97c5c317-50c6-4606-ad62-074f5380bd25" />
+
 
 **Step 15**
 
