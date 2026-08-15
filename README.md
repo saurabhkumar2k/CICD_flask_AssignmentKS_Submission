@@ -212,8 +212,6 @@ ImageName: **RunningFromEC2**
 
 ImageName: **RunningHostedApplication**
 <img width="1897" height="925" alt="image" src="https://github.com/user-attachments/assets/34549b15-4632-4ddf-a1e5-6bba1505e464" />
-
-
 **Step 26**
 Next step is for Email Configuration. 
 Updated CI-CD.Yaml with code below:
@@ -255,7 +253,7 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:${{ github.sha }}
-          
+        
       - name: Send Success Email
         if: success()
         uses: dawidd6/action-send-mail@v3
@@ -298,12 +296,12 @@ jobs:
             Run URL:
             https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-    Push code to the repository. And change SMTP Pasword and UserName
-    
+    Push code to the repository. And change SMTP Pasword and UserName    
     ImageName: **SMTP**
     <img width="1657" height="811" alt="image" src="https://github.com/user-attachments/assets/7536f151-f2d2-4b23-b20a-fd1d7df4dc96" />
 
     And Finally got successfully deployment email
+    
     ImageName: **EmailDeployment**
     <img width="1847" height="945" alt="image" src="https://github.com/user-attachments/assets/7011f531-ebaa-4a54-8932-d6f50a317dc5" />
 
