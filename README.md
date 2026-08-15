@@ -150,6 +150,9 @@ Modify IAM Role
 ImageName: **RoleModified**
 <img width="1906" height="847" alt="image" src="https://github.com/user-attachments/assets/9afacf6e-18d7-4fb6-93e6-c8ef90a509b8" />
 
+Verified IAM ROle
+ImageName: **RoleVerified**
+<img width="1907" height="807" alt="image" src="https://github.com/user-attachments/assets/8d22b760-3a53-4e04-ac8b-c5fa393df3a7" />
 
 
 **Step 99**
