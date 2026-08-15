@@ -161,6 +161,10 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 ImageName: **ECRLogin**
 <img width="1912" height="627" alt="image" src="https://github.com/user-attachments/assets/aee6ee68-d7f2-4f7a-8d6f-942bc29d02f3" />
 
+**Step 17**
+Checking my ECR repository and found it is listed
+ImageName: **ECRRepoList**
+<img width="1902" height="815" alt="image" src="https://github.com/user-attachments/assets/aa2472fa-0dce-49a8-90f3-45a883ededcc" />
 
 **Step 99**
 Next step is for CI/CD assignments. 
