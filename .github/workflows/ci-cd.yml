@@ -32,11 +32,11 @@ jobs:
 
       - name: Tag Docker Image
         run: |
-          docker tag student-registration-app:latest 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:latest
+          docker tag student-registration-app:latest 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:${{ github.sha }}
 
       - name: Push Docker Image
         run: |
-          docker push 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:
+          docker push 985818273957.dkr.ecr.us-east-1.amazonaws.com/student-registration-app:${{ github.sha }}
           
       - name: Send Success Email
         if: success()
