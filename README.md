@@ -166,6 +166,19 @@ Checking my ECR repository and found it is listed
 ImageName: **ECRRepoList**
 <img width="1902" height="815" alt="image" src="https://github.com/user-attachments/assets/aa2472fa-0dce-49a8-90f3-45a883ededcc" />
 
+**Step 18**
+
+Worked on GitHub Actions for Build DOcker Image for ECR
+ImageFile: BuildDockerImage
+<img width="1913" height="962" alt="image" src="https://github.com/user-attachments/assets/66b9e575-7723-48b9-8f4d-e13b12a2a35f" />
+
+**Step 19**
+Connected EC2 Instance and confirm repository
+ImageFile: CnfRepoEc
+<img width="1898" height="801" alt="image" src="https://github.com/user-attachments/assets/f378a89e-9ebd-47d8-9801-486eb330727e" />
+
+
+
 **Step 99**
 Next step is for CI/CD assignments. 
 
