@@ -143,9 +143,12 @@ ImageName: **DockerVerify**
 IAM
 
 Role Created
-ImageName: RoleCreated
+ImageName: **RoleCreated**
 <img width="1901" height="953" alt="image" src="https://github.com/user-attachments/assets/8a0d20a8-10da-4442-b62c-f6059102c61d" />
 
+Modify IAM Role
+ImageName: **RoleModified**
+<img width="1906" height="847" alt="image" src="https://github.com/user-attachments/assets/9afacf6e-18d7-4fb6-93e6-c8ef90a509b8" />
 
 
 
