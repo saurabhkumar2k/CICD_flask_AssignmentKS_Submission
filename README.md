@@ -212,11 +212,20 @@ ImageName: **RunningFromEC2**
 
 ImageName: **RunningHostedApplication**
 <img width="1897" height="925" alt="image" src="https://github.com/user-attachments/assets/34549b15-4632-4ddf-a1e5-6bba1505e464" />
-
-<img width="1771" height="905" alt="image" src="https://github.com/user-attachments/assets/2c94c2d2-3ec0-4f53-8759-578c9ab6172c" />
-
 **Step 26**
 Next step is for Email Configuration. 
+    Updated repository. And change SMTP Pasword and UserName  
+    
+    ImageName: **SMTP**
+    
+    <img width="1657" height="811" alt="image" src="https://github.com/user-attachments/assets/7536f151-f2d2-4b23-b20a-fd1d7df4dc96" />
+
+    And Finally got successfully deployment email
+    
+    ImageName: **EmailDeployment**
+<img width="1771" height="905" alt="image" src="https://github.com/user-attachments/assets/2c94c2d2-3ec0-4f53-8759-578c9ab6172c" />
+
+
 Updated CI-CD.Yaml with code below:
 name: Build Docker Image
       - name: Login to Amazon ECR
@@ -272,15 +281,7 @@ name: Build Docker Image
             Run URL:
             https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-    Updated repository. And change SMTP Pasword and UserName  
-    
-    ImageName: **SMTP**
-    
-    <img width="1657" height="811" alt="image" src="https://github.com/user-attachments/assets/7536f151-f2d2-4b23-b20a-fd1d7df4dc96" />
 
-    And Finally got successfully deployment email
-    
-    ImageName: **EmailDeployment**
     <img width="1771" height="905" alt="image" src="https://github.com/user-attachments/assets/34b65af4-0627-4fef-b703-678a65b2c619" />
 
     
