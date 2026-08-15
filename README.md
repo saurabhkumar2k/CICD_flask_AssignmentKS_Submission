@@ -154,6 +154,13 @@ Verified IAM ROle
 ImageName: **RoleVerified**
 <img width="1907" height="807" alt="image" src="https://github.com/user-attachments/assets/8d22b760-3a53-4e04-ac8b-c5fa393df3a7" />
 
+**Step 16**
+Now login to ECR
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 985818273957.dkr.ecr.us-east-1.amazonaws.com
+
+ImageName: **ECRLogin**
+<img width="1912" height="627" alt="image" src="https://github.com/user-attachments/assets/aee6ee68-d7f2-4f7a-8d6f-942bc29d02f3" />
+
 
 **Step 99**
 Next step is for CI/CD assignments. 
