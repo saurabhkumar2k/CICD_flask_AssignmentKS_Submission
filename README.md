@@ -140,6 +140,11 @@ ImageName: **DockerVerify**
 
 
 **Step 15**
+IAM
+
+Role Created
+ImageName: RoleCreated
+<img width="1901" height="953" alt="image" src="https://github.com/user-attachments/assets/8a0d20a8-10da-4442-b62c-f6059102c61d" />
 
 
 
