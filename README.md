@@ -212,6 +212,9 @@ ImageName: **RunningFromEC2**
 
 ImageName: **RunningHostedApplication**
 <img width="1897" height="925" alt="image" src="https://github.com/user-attachments/assets/34549b15-4632-4ddf-a1e5-6bba1505e464" />
+
+<img width="1771" height="905" alt="image" src="https://github.com/user-attachments/assets/2c94c2d2-3ec0-4f53-8759-578c9ab6172c" />
+
 **Step 26**
 Next step is for Email Configuration. 
 Updated CI-CD.Yaml with code below:
@@ -278,8 +281,9 @@ name: Build Docker Image
     And Finally got successfully deployment email
     
     ImageName: **EmailDeployment**
+    <img width="1771" height="905" alt="image" src="https://github.com/user-attachments/assets/34b65af4-0627-4fef-b703-678a65b2c619" />
+
     
-    <img width="1847" height="945" alt="image" src="https://github.com/user-attachments/assets/7011f531-ebaa-4a54-8932-d6f50a317dc5" />
 
     
 
