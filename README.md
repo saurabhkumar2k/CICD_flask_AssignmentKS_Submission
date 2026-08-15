@@ -177,6 +177,10 @@ Connected EC2 Instance and confirm repository
 ImageFile: CnfRepoEc
 <img width="1898" height="801" alt="image" src="https://github.com/user-attachments/assets/f378a89e-9ebd-47d8-9801-486eb330727e" />
 
+**Step 20**
+Updated CICD.yaml file with corrected code and updated Github Secrates with correct AWS access key information (Id, Key), Finally got running workflow like below:
+ImageFile: **WOrkFlowFinal**
+<img width="1877" height="948" alt="image" src="https://github.com/user-attachments/assets/126f3a78-18a1-4677-97b1-7776a856be36" />
 
 
 **Step 99**
