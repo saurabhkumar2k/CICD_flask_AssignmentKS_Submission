@@ -182,10 +182,20 @@ Updated CICD.yaml file with corrected code and updated Github Secrates with corr
 ImageName: **WOrkFlowFinal**
 <img width="1877" height="948" alt="image" src="https://github.com/user-attachments/assets/126f3a78-18a1-4677-97b1-7776a856be36" />
 
-Step 21
+**Step 21**
 Go to ECR Repository checked here for an image **latest**
-ImageName: ImageECR
+ImageName: **ImageECR**
 <img width="1886" height="796" alt="image" src="https://github.com/user-attachments/assets/15a5ebe4-592e-4eb8-8912-e2240345d0be" />
+
+**Step 22**
+Image is existing now at ECR Repository. So login to EC2 and tried to pull image
+ImageName: PullImage
+<img width="1910" height="865" alt="image" src="https://github.com/user-attachments/assets/7e2fecf9-7caf-404a-adbf-8a2210b1ef19" />
+
+ImageName:PulledFinalImage
+<img width="1897" height="905" alt="image" src="https://github.com/user-attachments/assets/948ab90e-099b-4d06-8338-48d1aa59bde1" />
+
+
 
 **Step 99**
 Next step is for CI/CD assignments. 
